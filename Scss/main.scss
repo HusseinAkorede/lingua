@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    background-color: #fff;
+}
+
+
+@import 
+'./header.scss', 
+
+'./values.scss',
+
+'./teachers.scss', 
+
+'./testimonial.scss', 
+
+'./faq.scss',
+
+'./freetrial.scss',
+
+'./footer.scss';
+

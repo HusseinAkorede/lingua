@@ -1,0 +1,82 @@
+@import'./varibles.scss';
+.lingua__footer{
+    font-family: $axiforma;
+    margin-inline: 100px;
+    margin-bottom: 70px;
+    @media screen and (max-width: 600px) {
+        margin-inline: 50px;
+    }
+    @media screen and (max-width: 500px) {
+        margin-inline: 20px;
+    }
+    background-color: $bg-blue;
+    border-radius: 40px;
+    .lingua__footer-wrapper{
+        padding-inline: 65px;
+        @media screen and (max-width: 375px) {
+            padding-inline: 45px;
+        }
+        padding-top: 50px;
+        padding-bottom: 100px;
+        display: flex;
+        align-items: flex-start;
+        // justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+        .container{
+            img{
+                width: 110px;
+                margin-bottom: 15px;
+            }
+            flex: 1 1 250px;
+            p{
+                color: $body_text;
+                line-height: 34px;
+            }
+        }
+        .lingua__footer-links{
+            flex: 1 1 60px;
+            h3{
+                margin-bottom: 20px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 16px;
+                    a{
+                        text-decoration: none;
+                        color: $body_text;
+                    }
+                }
+            }
+        }
+        .lingua__footer-socials{
+            flex: 1 1 120px;
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                list-style: none;
+                li{
+                    padding:20px;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $outline_dark;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

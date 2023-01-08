@@ -1,0 +1,1024 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+header {
+  max-width: 1400px;
+  background-color: #FFF5F1;
+  margin: 32px;
+  padding: 40px 70px;
+  border-radius: 40px 0 40px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px 0 #524FD5, 8px 8px 0px 0 #a3a1e9, 12px 12px 0px 0 #d7d6f5, 4px -4px 0px 0 #524FD5, 8px -8px 0px 0 #a3a1e9, 12px -12px 0px 0 #d7d6f5;
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    margin: 15px;
+    padding: 30px;
+  }
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lingua__navbar-nav {
+  transition: all 500ms;
+}
+.lingua__navbar-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lingua__navbar-nav ul li {
+  margin-right: 24px;
+}
+.lingua__navbar-nav ul li:last-child {
+  margin-right: 0;
+}
+.lingua__navbar-nav ul li a {
+  text-decoration: none;
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666680;
+}
+.lingua__navbar-nav ul li a:hover {
+  text-decoration: underline;
+  color: #524FD5;
+}
+.lingua__navbar-nav button {
+  background: #FFFFFF;
+  border-radius: 73px;
+  width: 120px;
+  height: 45px;
+  color: #524FD5;
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  transition: all 700ms;
+}
+.lingua__navbar-nav button:hover {
+  background-color: #524FD5;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 475px) {
+  .lingua__navbar-nav button {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .lingua__navbar-nav {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 30rem;
+    border-end-end-radius: 40px;
+    background-color: #413DD1;
+    width: 12rem;
+    padding: 5rem 2rem;
+    align-items: flex-start;
+    display: flex;
+  }
+  .lingua__navbar-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .lingua__navbar-nav ul li {
+    margin-bottom: 1.5rem;
+  }
+  .lingua__navbar-nav ul li a {
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+}
+.lingua__navbar-nav.active {
+  left: 0;
+}
+
+.lingua__navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lingua__navbar-btn button {
+  background: #FFFFFF;
+  border-radius: 73px;
+  width: 120px;
+  height: 45px;
+  color: #524FD5;
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  transition: all 700ms;
+  margin-right: 1rem;
+  border: 2px solid #524FD5;
+}
+.lingua__navbar-btn button:hover {
+  background-color: #524FD5;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+@media screen and (max-width: 475px) {
+  .lingua__navbar-btn button {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .lingua__navbar-btn img {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 40px;
+  flex-wrap: wrap-reverse;
+}
+.lingua__hero > * {
+  flex: 1 1 20em;
+}
+@media screen and (max-width: 823px) {
+  .lingua__hero {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lingua__hero {
+    gap: 10px;
+  }
+}
+.lingua__hero .lingua__hero-content {
+  color: #181B32;
+}
+.lingua__hero .lingua__hero-content h1 {
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: clamp(1.44rem, 0.87rem + 2.86vw, 3.44rem);
+  margin-bottom: 1rem;
+  line-height: 126%;
+}
+.lingua__hero .lingua__hero-content h1 span {
+  font-family: "Axiforma";
+  font-weight: 500;
+  color: #524FD5;
+}
+.lingua__hero .lingua__hero-content p {
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 1rem;
+  color: #666680;
+}
+@media screen and (max-width: 803px) {
+  .lingua__hero .lingua__hero-content {
+    text-align: center;
+  }
+}
+.lingua__hero .lingua__hero-content button {
+  background-color: #524FD5;
+  color: #FFFFFF;
+  border-radius: 73px;
+  width: 120px;
+  height: 45px;
+  border: 2px solid #FFFFFF;
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  transition: all 700ms;
+  margin-right: 1rem;
+}
+.lingua__hero .lingua__hero-content button:hover {
+  background: #FFFFFF;
+  color: #524FD5;
+  border: 2px solid #524FD5;
+}
+.lingua__hero .lingua__hero-image img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__values {
+  padding: 200px 100px 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 1000px) {
+  .lingua__values {
+    padding: 200px 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .lingua__values {
+    padding: 150px 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .lingua__values {
+    padding: 150px 15px;
+  }
+}
+.lingua__values .lingua__values-heading span {
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  text-transform: uppercase;
+  color: #B0B0C0;
+  margin-bottom: 0.5rem;
+}
+.lingua__values .lingua__values-heading h2 {
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 130%;
+  color: #181B32;
+  margin-bottom: 3rem;
+}
+.lingua__values .lingua__values-wrapper {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 88px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 425px) {
+  .lingua__values .lingua__values-wrapper {
+    padding: 10px;
+  }
+}
+.lingua__values .lingua__values-wrapper .lingua__values-value {
+  flex: 0 1 300px;
+}
+.lingua__values .lingua__values-wrapper .lingua__values-value img {
+  margin-bottom: 1rem;
+}
+.lingua__values .lingua__values-wrapper .lingua__values-value h5 {
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 36px;
+  color: #181B32;
+  margin: 0.5rem 0;
+}
+.lingua__values .lingua__values-wrapper .lingua__values-value p {
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 190%;
+  color: #666680;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__teachers {
+  padding: 100px;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 950px) {
+  .lingua__teachers {
+    padding: 100px 70px;
+  }
+}
+@media screen and (max-width: 765px) {
+  .lingua__teachers {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lingua__teachers {
+    padding: 10px;
+  }
+}
+.lingua__teachers .lingua__teachers-heading div.heading span {
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  text-transform: uppercase;
+  color: #B0B0C0;
+  margin-bottom: 0.5rem;
+}
+.lingua__teachers .lingua__teachers-heading div.heading h2 {
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 130%;
+  color: #181B32;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 425px) {
+  .lingua__teachers .lingua__teachers-heading div.heading h2 {
+    font-size: 30px;
+  }
+}
+.lingua__teachers .teachers__container .lingua__teachers-wrapper {
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.lingua__teachers .teachers__container .lingua__teachers-wrapper .lingua__teachers-teacher {
+  margin-bottom: 1rem;
+}
+.lingua__teachers .teachers__container .lingua__teachers-wrapper .lingua__teachers-teacher > img {
+  border-radius: 60px;
+}
+@media screen and (max-width: 370px) {
+  .lingua__teachers .teachers__container .lingua__teachers-wrapper .lingua__teachers-teacher > img {
+    width: 100%;
+  }
+}
+.lingua__teachers .teachers__container .lingua__teachers-wrapper .lingua__teachers-teacher h5 {
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #181B32;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+.lingua__teachers .teachers__container .lingua__teachers-wrapper .lingua__teachers-teacher .country {
+  display: flex;
+  align-items: center;
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 16px;
+  color: #666680;
+}
+.lingua__teachers .teachers__container .lingua__teachers-wrapper .lingua__teachers-teacher .country img {
+  margin-right: 0.5rem;
+  width: 28px;
+}
+.lingua__teachers .teachers__container .lingua__teachers-wrapper .lingua__teachers-teacher .country span {
+  line-height: 190%;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__testimonials {
+  margin-top: 150px;
+  margin-inline: 100px;
+}
+@media screen and (max-width: 600px) {
+  .lingua__testimonials {
+    margin-inline: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lingua__testimonials {
+    margin-inline: 20px;
+  }
+}
+.lingua__testimonials .lingua__testimonials-heading span {
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  text-transform: uppercase;
+  color: #B0B0C0;
+  margin-bottom: 0.5rem;
+}
+.lingua__testimonials .lingua__testimonials-heading h2 {
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 130%;
+  color: #181B32;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 425px) {
+  .lingua__testimonials .lingua__testimonials-heading h2 {
+    font-size: 30px;
+  }
+}
+.lingua__testimonials .testimonial-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.lingua__testimonials .testimonial-container .navigations {
+  background-color: #FFF5F1;
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  z-index: 111111111;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  left: 41%;
+  bottom: 5%;
+}
+@media screen and (max-width: 1100px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    bottom: 2%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    justify-content: start;
+    padding-inline: 2rem;
+    background: none;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    left: 51%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 65%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 904px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 62%;
+  }
+}
+@media screen and (max-width: 737px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 60%;
+  }
+}
+@media screen and (max-width: 626px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 57%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 65%;
+  }
+}
+@media screen and (max-width: 443px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 63%;
+  }
+}
+@media screen and (max-width: 405px) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 61%;
+  }
+}
+@media screen and (max-width: 375PX) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 59%;
+  }
+}
+@media screen and (max-width: 359PX) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 56%;
+  }
+}
+@media screen and (max-width: 335PX) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 54%;
+  }
+}
+@media screen and (max-width: 320PX) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 53%;
+  }
+}
+@media screen and (max-width: 319PX) {
+  .lingua__testimonials .testimonial-container .navigations {
+    top: 0;
+  }
+}
+.lingua__testimonials .testimonial-container .navigations .navigation {
+  transition: all 1s;
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.432);
+  cursor: pointer;
+  transform: scale(0.5);
+}
+.lingua__testimonials .testimonial-container .navigations .navigation.active {
+  background-color: #413DD1;
+  transform: scale(1);
+}
+.lingua__testimonials .lingua__testimonials-wrapper {
+  width: 500%;
+  display: flex;
+  transition: all 1s;
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial {
+  width: 20%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+@media screen and (max-width: 490px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 405px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial {
+    gap: 70px;
+  }
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-img img {
+  width: 400px;
+}
+@media screen and (max-width: 450px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review {
+  font-family: "Axiforma";
+}
+@media screen and (max-width: 1000px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review {
+    text-align: center;
+  }
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 180%;
+  color: #181B32;
+}
+@media screen and (max-width: 450px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review .heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review .heading h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 450px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review .heading h3 {
+    font-size: 28px;
+  }
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review .heading .country {
+  display: flex;
+  align-items: center;
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 14px;
+  color: #666680;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review .heading .country {
+    justify-content: center;
+  }
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review .heading .country img {
+  margin-right: 0.5rem;
+  width: 25px;
+}
+.lingua__testimonials .lingua__testimonials-wrapper .lingua__testimonial .lingua__testimonial-review .heading .country span {
+  line-height: 190%;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__faqs {
+  margin-inline: 100px;
+  margin-top: 150px;
+  font-family: "Axiforma";
+}
+@media screen and (max-width: 755px) {
+  .lingua__faqs {
+    margin-inline: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lingua__faqs {
+    margin-inline: 20px;
+  }
+}
+.lingua__faqs .lingua__faqs-heading span {
+  font-family: "Axiforma";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 190%;
+  text-transform: uppercase;
+  color: #B0B0C0;
+  margin-bottom: 0.5rem;
+}
+.lingua__faqs .lingua__faqs-heading h2 {
+  font-family: "Axiforma";
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 130%;
+  color: #181B32;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 425px) {
+  .lingua__faqs .lingua__faqs-heading h2 {
+    font-size: 28px;
+  }
+}
+.lingua__faqs .wrappers {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.lingua__faqs .wrappers > * {
+  flex: 1 1 500px;
+}
+.lingua__faqs .lingua__faqs-wrapper {
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq {
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 25px 45px;
+  border: 1px solid #B0B0C0;
+  border-radius: 20px;
+}
+@media screen and (max-width: 700px) {
+  .lingua__faqs .lingua__faqs-wrapper .lingua__faq {
+    padding: 15px 25px;
+  }
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content {
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content.open {
+  color: white;
+  transition: all 0.2s linear;
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content.open .lingua__faq-content-header span {
+  color: white;
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content.open .lingua__faq-content-header span:nth-child(2) {
+  background-color: white;
+  color: #524FD5;
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content .lingua__faq-content-header {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content .lingua__faq-content-header span {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: #181B32;
+  margin-right: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content .lingua__faq-content-header span {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+.lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content p {
+  height: 0px;
+  transition: all 0.2s linear;
+  font-size: 18px;
+}
+@media screen and (max-width: 600px) {
+  .lingua__faqs .lingua__faqs-wrapper .lingua__faq .lingua__faq-content p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__freetrial {
+  margin-inline: 100px;
+  margin-top: 100px;
+  font-family: "Axiforma";
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 160px;
+}
+@media screen and (max-width: 700px) {
+  .lingua__freetrial {
+    margin-inline: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lingua__freetrial {
+    margin-inline: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lingua__freetrial {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.lingua__freetrial .lingua__freetrial-wrapper h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  color: #181B32;
+  line-height: 130%;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 425px) {
+  .lingua__freetrial .lingua__freetrial-wrapper h1 {
+    font-size: 35px;
+  }
+}
+.lingua__freetrial .lingua__freetrial-wrapper p {
+  color: #666680;
+  margin-bottom: 1rem;
+}
+.lingua__freetrial .lingua__freetrial-wrapper .input-group {
+  max-width: 550px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.lingua__freetrial .lingua__freetrial-wrapper .input-group input {
+  flex: 1 1 400px;
+  height: 64px;
+  background-color: rgb(230, 237, 253);
+  border-radius: 73px;
+  border: 0;
+  outline: none;
+  padding-left: 33px;
+  font-size: 18px;
+  color: #181B32;
+}
+.lingua__freetrial .lingua__freetrial-wrapper .input-group input::placeholder {
+  font-size: 18px;
+  color: #181B32;
+  font-weight: 300;
+}
+.lingua__freetrial .lingua__freetrial-wrapper .input-group button {
+  flex: 1 1 100px;
+  width: 100%;
+  padding: 0 32px;
+  height: 64px;
+  border-radius: 73px;
+  background-color: #524FD5;
+  outline: none;
+  transition: 0.5s all ease;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  border: 2px solid #524FD5;
+}
+.lingua__freetrial .lingua__freetrial-wrapper .input-group button:hover {
+  background-color: #fff;
+  color: #524FD5;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Medium.woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Axiforma";
+  src: url("../Fonts/Axiforma-Light.woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+.lingua__footer {
+  font-family: "Axiforma";
+  margin-inline: 100px;
+  margin-bottom: 70px;
+  background-color: rgb(230, 237, 253);
+  border-radius: 40px;
+}
+@media screen and (max-width: 600px) {
+  .lingua__footer {
+    margin-inline: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lingua__footer {
+    margin-inline: 20px;
+  }
+}
+.lingua__footer .lingua__footer-wrapper {
+  padding-inline: 65px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 375px) {
+  .lingua__footer .lingua__footer-wrapper {
+    padding-inline: 45px;
+  }
+}
+.lingua__footer .lingua__footer-wrapper .container {
+  flex: 1 1 250px;
+}
+.lingua__footer .lingua__footer-wrapper .container img {
+  width: 110px;
+  margin-bottom: 15px;
+}
+.lingua__footer .lingua__footer-wrapper .container p {
+  color: #666680;
+  line-height: 34px;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-links {
+  flex: 1 1 60px;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-links h3 {
+  margin-bottom: 20px;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-links ul {
+  list-style: none;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-links ul li {
+  margin-bottom: 16px;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-links ul li a {
+  text-decoration: none;
+  color: #666680;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-socials {
+  flex: 1 1 120px;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-socials ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-socials ul li {
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #B0B0C0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.lingua__footer .lingua__footer-wrapper .lingua__footer-socials ul li a {
+  text-decoration: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

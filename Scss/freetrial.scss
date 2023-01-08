@@ -1,0 +1,87 @@
+@import './varibles.scss';
+.lingua__freetrial{
+    margin-inline: 100px;
+    @media screen and (max-width: 700px) {
+        margin-inline: 50px;
+    }
+    @media screen and (max-width: 500px) {
+        margin-inline: 20px;
+    }
+    margin-top: 100px;
+    font-family: $axiforma;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    @media screen and (max-width: 500px) {
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .lingua__freetrial-wrapper{
+        // background-color: red;
+        // padding-inline: 250px;
+        
+        h1{
+            font-size: 40px;
+            font-weight: lighter;
+            color: $text_primary;
+            line-height: 130%;
+            margin-bottom: 1rem;
+            @media screen and (max-width: 425px) {
+                font-size: 35px;
+            }
+        }
+        p{
+            color: $body_text;
+            margin-bottom: 1rem;
+        }
+        .input-group{
+            max-width: 550px;
+            width: 100%;
+            margin-inline: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            input{
+                flex: 1 1 400px;
+                // width: 410px;
+                height: 64px;
+
+                background-color: $bg-blue;
+                border-radius: 73px;
+                border: 0;
+                outline: none;
+                padding-left: 33px;
+                font-size: 18px;
+                color: $text_primary;
+                &::placeholder{
+                    font-size: 18px;
+                    color: $text_primary;
+                    font-weight: 300;
+                }
+            }
+            button{
+                flex: 1 1 100px;
+                width: 100%;
+                padding: 0 32px;
+                height: 64px;
+                border-radius: 73px;
+                background-color: $primary_200;
+                outline: none;
+                transition: 0.5s all ease;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 30px;
+                color: #fff;
+                border: 2px solid $primary_200;
+                &:hover{
+                    background-color: #fff;
+                    color: $primary_200;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import './varibles.scss';
+.lingua__values{
+    padding: 200px 100px 20px;
+    text-align: center;
+    font-family: sans-serif ;
+    @media screen and (max-width: 1000px) {
+        padding: 200px 0px;
+    }
+    @media screen and (max-width: 550px) {
+        padding: 150px 50px;
+    }
+    @media screen and (max-width: 425px) {
+        padding: 150px 15px;
+    }
+    .lingua__values-heading{
+        span{
+            font-family: $axiforma;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 190%;
+            text-transform: uppercase;
+            color: $outline_dark;
+            margin-bottom: 0.5rem;
+        }
+        h2{
+            font-family: $axiforma;
+            font-weight: lighter;
+            font-size: 40px;
+            line-height: 130%;
+            color: $text_primary;
+            margin-bottom: 3rem;
+        }
+    }
+    .lingua__values-wrapper{
+        padding: 20px;
+        @media screen and (max-width: 425px) {
+            padding: 10px;
+        }
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 88px;
+        flex-wrap: wrap;
+        .lingua__values-value{
+            flex: 0 1 300px;
+            img{
+                margin-bottom: 1rem;
+            }
+            h5{
+                font-family: $axiforma;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 36px;
+                color: $text_primary;
+                margin: 0.5rem 0;
+            }
+            p{
+                font-family: $axiforma;
+                font-weight: lighter;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 190%;
+                color: $body_text;
+            }
+        }
+    }
+}
