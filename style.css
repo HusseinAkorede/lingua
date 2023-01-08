@@ -511,7 +511,7 @@ header {
 }
 @media screen and (max-width: 500px) {
   .lingua__testimonials .testimonial-container .navigations {
-    gap: 15px;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -601,7 +601,7 @@ header {
   height: 10px;
   background-color: rgba(0, 0, 0, 0.432);
   cursor: pointer;
-  transform: scale(0.5);
+  transform: scale(0.7);
 }
 .lingua__testimonials .testimonial-container .navigations .navigation.active {
   background-color: #413DD1;
