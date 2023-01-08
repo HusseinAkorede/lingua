@@ -601,11 +601,9 @@ header {
   height: 10px;
   background-color: rgba(0, 0, 0, 0.432);
   cursor: pointer;
-  transform: scale(0.7);
 }
 .lingua__testimonials .testimonial-container .navigations .navigation.active {
   background-color: #413DD1;
-  transform: scale(1);
 }
 .lingua__testimonials .lingua__testimonials-wrapper {
   width: 500%;
